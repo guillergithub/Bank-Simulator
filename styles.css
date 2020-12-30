@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box-bankContainer {
+  background: lightseagreen;
+  overflow: hidden;
+  margin: auto;
+  width: 830px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.box-inputsContainer {
+  background: lightcoral;
+  overflow: hidden;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.box-inputUsers {
+  background: lightgreen;
+  float: left;
+  padding: 10px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.box-inputTime {
+  background: lightsteelblue;
+  float: right;
+  padding: 10px;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+.box-office1,
+.box-office2,
+.box-office3,
+.box-office4 {
+  overflow: hidden;
+  background: lightskyblue;
+  margin: 10px;
+}
+
+.btn-start {
+  padding: 10px;
+  margin: 10px 45%;
+  border-radius: 10px;
+}
+
+.client {
+  float: left;
+  background: lightcoral;
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  width: 10px;
+  height: 20px;
+}
+
+.inputUsers {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.inputTime {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.office {
+  background: mediumpurple;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  border: solid 2px purple;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
