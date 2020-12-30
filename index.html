@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <!-- si el proyecto está en español, el título también debe estarlo -->
     <title>Bank of JS</title>
   </head>
   <body>
     <div class="box-inputsContainer">
       <div class="box-inputUsers box-input">
+        <!-- para las secciones que referencian a los input, generalmente se
+              utilizan labels o en su defecto span -->
         <p>Usuarios a atender:</p>
+        <!-- no es recomendable usar el mismo id como clase -->
+        <!-- el placeholder dice "ingrese usuarios", pero estás solicitando el 
+              número de usuarios, debes ser claro en los datos qeu pides al usuario.
+              Lo mismo sucede en el input siguiente -->
         <input
           type="text"
           class="inputUsers"
@@ -21,6 +28,10 @@
 
       <div class="box-inputTime">
         <p>Tiempo en Segundos:</p>
+        <!-- si sabes que es un campo que será numérico, no utilices un campo de texto,
+              siempre que puedas, limita la forma de acción del usuario al flujo que 
+              te convenga, no le des tantas libertades de accesión. Lo mismo para el 
+              input anterior -->
         <input
           type="text"
           class="inputTime box-input"
@@ -32,7 +43,11 @@
     </div>
 
     <div class="box-bankContainer">
+      <!-- ¿por qué usar una clase box-office1/2/3/4 si tienes una clase box-office? -->
+      <!-- las clases se usan para asignar características a múltiples elementos del
+            DOM, los ID son los que se usan para asignar a un nodo en particular.-->
       <div class="box-office1 box-office" id="box-office">
+        <!-- mismo punto de no usar el id como clase -->
         <div class="office1 office" id="office1">Taquilla 1</div>
       </div>
 
@@ -48,6 +63,10 @@
         <div class="office4 office" id="office4">Taquilla 4</div>
       </div>
 
+      <!-- En este caso como estás haciendo únicamente una acción que no depende de un 
+            valor oculto, puedes usar un button. Utilizar un input tipo botón suele ser
+            cuando necesitas que una acción se realice con base en un parámetro que le
+            debes pasar de forma manual.-->
       <input
         type="button"
         value="START"
@@ -56,6 +75,8 @@
         onclick="btn()"
       />
     </div>
+    <!-- los archivos no suelen llamarse con mayúsculas al inicio a menos que sean paquetes
+          de pago de librerías desarrolladas por empresas grandes. -->
     <script src="./Simulator.js"></script>
   </body>
 </html>
